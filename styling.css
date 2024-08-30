@@ -1,0 +1,134 @@
+body{
+    background: url("back.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: centre;
+    margin: 0;
+    padding: 0;
+}
+.form, #dash{ 
+    background-position: center;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10cm;
+    margin-right: 10cm;
+    margin-top: 2cm;
+    border-radius: 7px;
+    line-height: 32px;
+}
+
+.form h1{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.form ul li{
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#fname, #email, #mail, #ingredients, #rname, #prep, #password, #passconfirm, #category, #rename{
+    padding: 5px;
+    width: 280px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.confirmbutton #confirm{
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#confirm:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+*{
+    font-family: "Comic Sans";
+}
+
+#user, #home{
+    font-size: 19px;
+}
+
+#dash ul li{
+    text-align: center;
+    line-height: 38px;
+}
+
+#dash h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#dash a {
+    color: black; 
+    
+}
+
+#dash a:hover {
+    text-decoration:underline; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(95, 95, 95);
+    padding: 10px;
+    text-align: center;
+}
+
+.header-container h1, .header-container a {
+    color: black;
+    margin: 0;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.header-container a {
+    padding: 10px 20px;
+    background-color: rgb(95, 95, 95);
+    border-radius: 5px;
+}
+
+.header-container a:hover {
+    background-color: grey;
+}
+
+#images {
+    display: inline-block; /* To make contents appear side by side */
+    flex-wrap: wrap; /* To wrap contents to the next line if necessary */
+    justify-content: space-around; /* Optional: To add space between elements */
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+.recipe {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 450px; /* Set a fixed width for the recipe items */
+    }
+
+.recipe img {
+    width: 100%; /* Ensure images fit within the recipe container */
+    height: 100%; /* Maintain aspect ratio */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+

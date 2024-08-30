@@ -1,0 +1,179 @@
+body{ /* To make the background image above the fold cover the entire page */
+    margin: 0;
+    padding:0;
+}
+
+.navigation {
+    background-color: rgba(230, 227, 227, 0.8);/* Set the background color of the navigation bar */
+    padding: 0;
+    margin: 0;
+
+}
+
+.navigation ul {
+    list-style-type: none; /* Remove the list style */
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline-block; /* To make the contents of the navigation bar be arranged horizontally */
+    margin-right: 90px;
+    font-weight: bold;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown {
+    position: relative; /* To make contents in the dropdown bar appear relative to its normal position */
+}
+
+.dropdown-content {
+    display: none; /* This makes the dropdown-content not visible until toggled */
+    position: absolute; /* To make the dropdown-content appear below the dropdown */
+    background-color: white;
+     z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* To make contents in the dropdown bar appear when hovered */
+}
+
+.dropdown-content a { /* To make contents in the dropdown bar appear in a block format */
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover { /* Changes color of the content when hovered */
+    background-color: rgb(182, 182, 182);
+}
+
+#images {
+    display: flex; /* To make contents appear side by side */
+    flex-wrap: wrap; /* To make contents appear in a 2*2 grid */
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.recipe {
+    background-color: rgb(184, 182, 182);
+    box-shadow: 1px solid #454545;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.recipe img {
+    width: 100%; /* To ensure only 2 pictures can fit horizontally */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.above { /* To add a background image above the fold */
+    background-image: url('calum-lewis-vA1L1jRTM70-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.below {
+    background-clip: border-box;
+    margin-left: 0.25cm;
+    margin-top: 10px;
+    margin-right: 0.5cm;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 0.5px;
+}
+
+.above #headlines{
+    background-color: rgba(230, 227, 227, 0.8);
+    background-clip: border-box;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+}
+
+#closing{
+    background-color: rgb(184, 182, 182);
+    font-size: 20px;
+    display: flex;
+    padding: 10px;
+}
+
+#closing ul li a{
+    text-decoration:none;
+    color: black;
+}
+
+*{
+font-family: "Comic Sans";
+font-size: 21px;
+}
+
+.searchform {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.searchinput {
+    padding: 10px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.searchinput:focus {
+    border-color: black;
+}
+
+.searchbutton {
+    padding: 10px;
+    background-color: rgb(115, 115, 115);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.searchbutton:hover {
+    background-color: gray;
+}
+
+#dash {
+    position: fixed;
+    top: 24px;
+    right: 20px; 
+    width: 120px; 
+    height: auto; 
+    background-color: rgba(230, 227, 227, 0.8);
+    border-radius: 15px;
+    padding: 10px; 
+    z-index: 1000; 
+}
+
+#dash a {
+    color: black; 
+    text-decoration: none; 
+}
+
+#dash a:hover {
+    text-decoration:underline; 
+}
